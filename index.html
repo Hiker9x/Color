@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Rahman Coloring Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="menu">
+            <h1>Abdul Rahman Coloring Adventure</h1>
+            <button onclick="startGame()">Start Game</button>
+            <button onclick="viewGallery()">Gallery</button>
+            <button onclick="viewSettings()">Settings</button>
+            <button onclick="viewAbout()">About</button>
+        </div>
+        <div id="game" style="display: none;">
+            <canvas id="coloringCanvas" width="320" height="480"></canvas>
+            <div id="controls">
+                <input type="color" id="colorPicker" value="#00ff00">
+                <button onclick="saveArtwork()">Save</button>
+                <button onclick="undoLast()">Undo</button>
+                <button onclick="redoLast()">Redo</button>
+                <button onclick="goToMenu()">Menu</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
